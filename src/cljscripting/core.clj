@@ -11,4 +11,5 @@
 (defn -main
   "The application's main function"
   [& args]
-  (foo "Philippe"))
+  (println args)
+  (eval (map #(read-string %) args)))
